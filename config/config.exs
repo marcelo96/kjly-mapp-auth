@@ -8,7 +8,8 @@
 import Config
 
 config :kjly_mapp_auth,
-  ecto_repos: [KjlyMappAuth.Repo]
+  ecto_repos: [KjlyMappAuth.Repo],
+  generators: [binary_id: true]
 
 # Configures the endpoint
 config :kjly_mapp_auth, KjlyMappAuthWeb.Endpoint,
